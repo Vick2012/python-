@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas Guía N°1</title>
+    <link rel="stylesheet" href="{% static 'mi_app/style.css' %}">
+    <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="clock">
+        <p id="date"></p>
+        <p id="time"></p>
+    </div>
+
+    <div class="container">
+        {% for item in items %}
+        <div class="item">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.description }}</p>
+            <a href="{{ item.link }}" target="_blank">
+                <span><i class="{{ item.icon }}"></i></span>
+            </a>
+            <h4>{{ item.language }}</h4>
+        </div>
+        {% endfor %}
+    </div>
+
+    <script src="{% static 'mi_app/script.js' %}"></script>
+</body>
+</html>

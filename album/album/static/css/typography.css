@@ -1,0 +1,17 @@
+.item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.item h4 {
+    font-size: 16px;
+    color: #222;
+    font-weight: bold;
+}
